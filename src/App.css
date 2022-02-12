@@ -135,7 +135,7 @@ button.back {
     background: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .container {
         margin-top: 5rem;
         margin-left: 0;
@@ -173,6 +173,9 @@ button.back {
     .firstpage-input {
         padding: 1rem;
     }
+    button {
+        flex-direction: column;
+    }
 }
 
 .finished {
@@ -189,8 +192,4 @@ button.back {
 
 .finished h2 span {
     color: #f60047;
-}
-
-.btns {
-    flex-direction: column;
 }

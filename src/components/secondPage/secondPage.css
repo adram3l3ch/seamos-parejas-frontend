@@ -44,7 +44,7 @@ h1 {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     .second-page,
     .third-page,
     .fifth-page {
