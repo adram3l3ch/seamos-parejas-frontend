@@ -190,3 +190,7 @@ button.back {
 .finished h2 span {
     color: #f60047;
 }
+
+.btns {
+    flex-direction: column;
+}
