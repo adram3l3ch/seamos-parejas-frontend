@@ -1,0 +1,5 @@
+input[type="checkbox"] {
+    margin-right: 1rem;
+    accent-color: #f60047;
+    transform: scale(1.5);
+}
