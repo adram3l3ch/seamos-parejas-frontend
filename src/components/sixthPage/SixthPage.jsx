@@ -20,7 +20,10 @@ const SixthPage = () => {
                 onSubmit={async (e) => {
                     e.preventDefault();
                     try {
-                        await axios.post("http://localhost:5000/api/v1/user", user);
+                        await axios.post(
+                            "https://seamosparejas.herokuapp.com/api/v1/user",
+                            user
+                        );
                         navigate("/finished");
                     } catch (error) {
                         alert(error.message);
