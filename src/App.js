@@ -1,3 +1,4 @@
+import React from "react";
 import FirstPage from "./components/firstPage";
 import bg from "./assets/bg.png";
 import "./App.css";
