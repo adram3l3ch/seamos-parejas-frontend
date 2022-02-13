@@ -173,7 +173,7 @@ button.back {
     .firstpage-input {
         padding: 1rem;
     }
-    button {
+    .btns {
         flex-direction: column;
     }
 }
