@@ -8,12 +8,14 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    background: #121212;
 }
 
 .App {
     position: relative;
+    max-width: 1200px;
     min-height: 100vh;
-    background: #121212;
+    margin-inline: auto;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -192,4 +194,80 @@ button.back {
 
 .finished h2 span {
     color: #f60047;
+}
+
+.match-grid {
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    place-content: center;
+    gap: 1rem;
+}
+
+.match-card {
+    background-color: #ea67a6;
+    padding: 2rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    row-gap: 1rem;
+    justify-content: space-between;
+    transition: transform 0.2s linear;
+}
+
+.match-card:hover {
+    transform: scale(1.02);
+}
+
+.percentage {
+    font-size: 2rem;
+    font-weight: bold;
+    justify-self: flex-end;
+}
+
+.percentage span {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.bio {
+    grid-column: span 2;
+    text-align: center;
+    font-style: italic;
+}
+
+.insta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.instaid {
+    margin-top: 0.1rem;
+}
+
+.loading {
+    width: 60px;
+    aspect-ratio: 1;
+    border: 7px solid white;
+    border-radius: 50%;
+    margin-inline: auto;
+    border-bottom-color: transparent;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.error {
+    color: #f60047;
+    font-size: 2rem;
+    text-align: center;
 }

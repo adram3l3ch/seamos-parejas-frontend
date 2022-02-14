@@ -4,8 +4,11 @@ const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
     const [user, setUser] = useState({});
+    const [id, setId] = useState("");
     return (
-        <AppContext.Provider value={{ user, setUser }}>{children}</AppContext.Provider>
+        <AppContext.Provider value={{ user, setUser, id, setId }}>
+            {children}
+        </AppContext.Provider>
     );
 };
 
