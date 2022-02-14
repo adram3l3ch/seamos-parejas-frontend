@@ -66,7 +66,8 @@ const Result = () => {
             ) : (
                 <>
                     <h1>
-                        Hi, {user?.name.split(" ")[0]} <br /> here are your top matches
+                        Hi, <span>{user?.name.split(" ")[0]}</span> <br /> here are your
+                        top matches
                     </h1>
                     <div className="match-grid">
                         {matches?.map((match) => (
