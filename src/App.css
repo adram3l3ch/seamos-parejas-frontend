@@ -187,6 +187,9 @@ button.back {
     .btns {
         flex-direction: column;
     }
+    h1 span {
+        color: white;
+    }
 }
 
 .finished {
