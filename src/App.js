@@ -10,8 +10,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import FifthPage from "./components/fifthPage/FifthPage.jsx";
 // import SixthPage from "./components/sixthPage/SixthPage.jsx";
 // import Finished from "./components/Finished.jsx";
-import ResultFront from "./components/ResultFront";
-import Result from "./components/Result";
+// import ResultFront from "./components/ResultFront";
+// import Result from "./components/Result";
 
 function App() {
     const { user } = useGlobalState();
@@ -31,8 +31,24 @@ function App() {
                     <Route exact path="/about_5" element={<SixthPage />} />
                     <Route exact path="/finished" element={<Finished />} />
                     <Route exact path="/match/:id" element={<Finished />} /> */}
-                    <Route path="/" element={<ResultFront />} />
-                    <Route path="/:id" element={<Result />} />
+                    {/* <Route path="/" element={<ResultFront />} /> */}
+                    {/* <Route path="/:id" element={<Result />} /> */}
+                    <Route
+                        path="/"
+                        element={
+                            <h1 style={{ textAlign: "center" }}>
+                                Dei Nirthipode, valentines day okke kazhinjille
+                            </h1>
+                        }
+                    />
+                    <Route
+                        path="/:id"
+                        element={
+                            <h1 style={{ textAlign: "center" }}>
+                                Dei Nirthipode, valentines day okke kazhinjille
+                            </h1>
+                        }
+                    />
                 </Routes>
             </Router>
         </div>
